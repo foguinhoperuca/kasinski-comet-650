@@ -7,6 +7,9 @@
 	<link rel="stylesheet" href="assets/styles/reset.css" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
     <title>Vende-se Kasinski Comet 650 R</title>
+	<!-- <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<link rel="stylesheet" href="assets/styles/style.css" />
 	<!-- JUST FOR DEV PURPOSE - node livereload -->
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js"></' + 'script>')</script>
@@ -45,11 +48,95 @@
 		  </a>
 		</div>
 	  </section>
-	  <!-- <img class="main-image" alt="Foto Destaque Comet 650" src="assets/images/main.jpeg" width="720" height="1280" /> -->
-	  <img class="main-image" alt="Foto Destaque Comet 650" src="assets/images/main.jpeg" width="482" height="857" />
+	  <div class="swiper">
+		<div class="swiper-wrapper">
+		  <div class="swiper-slide">
+			<figure class="item active" id="figure-1-testimonies">
+			  <img class="main-image" src="assets/images/photo_01.jpeg" alt="Depoimento 1">
+			  <figcaption class="carousel-caption">
+				<h3>Yuri Padilha</h3>
+				<p>Gostei muito e achei rápido o serviço.</p>
+			  </figcaption>
+			</figure>
+		  </div>
+		  <div class="swiper-slide">
+			<figure class="item" id="figure-2-testimonies">
+			  <img class="main-image" src="assets/images/photo_02.jpeg" alt="Depoimento 2">
+			  <figcaption class="carousel-caption">
+				<h3>Fernando Stafaneni</h3>
+				<p>Excelente trabalho.</p>
+			  </figcaption>
+			</figure>
+		  </div>
+		  <div class="swiper-slide">
+			<figure class="item" id="figure-3-testimonies">
+			  <img class="main-image" src="assets/images/photo_03.jpeg" alt="Depoimento 3">
+			  <figcaption class="carousel-caption">
+				<h3>Caio Sauzas</h3>
+				<p>Gostei, competência em primeiro lugar.</p>
+			  </figcaption>
+			</figure>
+		  </div>
+
+		  <div class="swiper-slide">
+			<figure class="item active" id="figure-1-testimonies">
+			  <img class="secondary-image" src="assets/images/olx_01.webp" alt="Depoimento 4">
+			  <figcaption class="carousel-caption">
+				<h3>Yuri Padilha</h3>
+				<p>Gostei muito e achei rápido o serviço.</p>
+			  </figcaption>
+			</figure>
+		  </div>
+		  <div class="swiper-slide">
+			<figure class="item" id="figure-2-testimonies">
+			  <img class="secondary-image" src="assets/images/olx_02.webp" alt="Depoimento 5">
+			  <figcaption class="carousel-caption">
+				<h3>Fernando Stafaneni</h3>
+				<p>Excelente trabalho.</p>
+			  </figcaption>
+			</figure>
+		  </div>
+		  <div class="swiper-slide">
+			<figure class="item" id="figure-3-testimonies">
+			  <img class="main-image" src="assets/images/olx_03.webp" alt="Depoimento 6">
+			  <figcaption class="carousel-caption">
+				<h3>Caio Sauzas</h3>
+				<p>Gostei, competência em primeiro lugar.</p>
+			  </figcaption>
+			</figure>
+		  </div>
+		</div>
+		<!-- Optional: pagination, navigation, scrollbar -->
+		<div class="swiper-pagination"></div>
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-scrollbar"></div>
+	  </div>
     </main>
     <!-- <footer class="footer">
 		 <a class="footer__link" href="https://github.com/foguinhoperuca/alura-portifolio">Desenvolvido por Jefferson Campos.</a>
 		 </footer> -->
+	<!-- <script src="assets/js/testimonies.js"></script> -->
+	<script>
+     const swiper = new Swiper('.swiper', {
+	   autoHeight: true,
+	   spaceBetween: 20,
+       // Optional parameters
+       direction: 'horizontal',
+       loop: true,
+       pagination: {
+         el: '.swiper-pagination',
+		 type: "fraction",
+         clickable: true,
+       },
+       navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+       },
+       scrollbar: {
+         el: '.swiper-scrollbar',
+       },
+     });
+	</script>
   </body>
 </html>

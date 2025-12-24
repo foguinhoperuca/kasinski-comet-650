@@ -133,8 +133,13 @@ body {
 }
 
 .main-image {
-	height: 532px;
-	width: 468px;
+	height: 512px;
+	width: 288px;
+}
+
+.secondary-image {
+	height: 512px;
+	width: 300px;
 }
 
 .footer {
@@ -171,6 +176,16 @@ strong {
 	/* width: 20%; */
 	/* height: 20%; */
 	margin: 0px;
+}
+
+/*
+ * Custom Kasinski
+ */
+.swiper {
+	width: 288px;
+	height: 512px;
+	/* width: 100%; */
+	/* height: auto; */
 }
 
 @media(max-width: 768px) {
